@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10382" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:42 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10382" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:42 IST">
+      <class name="frizza.Profile">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frizza.Profile@30a3107a]" name="setup" is-config="true" duration-ms="0" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BlankDOB()[pri:0, instance:frizza.Profile@30a3107a]" name="BlankDOB" duration-ms="236" started-at="2021-04-06T17:33:39 IST" finished-at="2021-04-06T17:33:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankDOB -->
+        <test-method status="PASS" signature="ImproperEmailFormat()[pri:0, instance:frizza.Profile@30a3107a]" name="ImproperEmailFormat" duration-ms="247" started-at="2021-04-06T17:33:40 IST" finished-at="2021-04-06T17:33:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImproperEmailFormat -->
+        <test-method status="PASS" signature="ProperdataProfileupdate()[pri:0, instance:frizza.Profile@30a3107a]" name="ProperdataProfileupdate" duration-ms="258" started-at="2021-04-06T17:33:40 IST" finished-at="2021-04-06T17:33:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProperdataProfileupdate -->
+        <test-method status="PASS" signature="blankEMail()[pri:0, instance:frizza.Profile@30a3107a]" name="blankEMail" duration-ms="265" started-at="2021-04-06T17:33:40 IST" finished-at="2021-04-06T17:33:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEMail -->
+      </class> <!-- frizza.Profile -->
+      <class name="frizza.Login">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frizza.Login@33c7e1bb]" name="setup" is-config="true" duration-ms="1" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ProperLogin()[pri:0, instance:frizza.Login@33c7e1bb]" name="ProperLogin" duration-ms="246" started-at="2021-04-06T17:33:40 IST" finished-at="2021-04-06T17:33:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProperLogin -->
+        <test-method status="PASS" signature="RootedLogin()[pri:0, instance:frizza.Login@33c7e1bb]" name="RootedLogin" duration-ms="579" started-at="2021-04-06T17:33:41 IST" finished-at="2021-04-06T17:33:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RootedLogin -->
+      </class> <!-- frizza.Login -->
+      <class name="frizza.Wallet">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frizza.Wallet@34c4973]" name="setup" is-config="true" duration-ms="1" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="PaytmtranferRequestwithooutCriteria()[pri:0, instance:frizza.Wallet@34c4973]" name="PaytmtranferRequestwithooutCriteria" duration-ms="298" started-at="2021-04-06T17:33:41 IST" finished-at="2021-04-06T17:33:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaytmtranferRequestwithooutCriteria -->
+        <test-method status="PASS" signature="UnauthorisedViewWalletHistory()[pri:0, instance:frizza.Wallet@34c4973]" name="UnauthorisedViewWalletHistory" duration-ms="235" started-at="2021-04-06T17:33:42 IST" finished-at="2021-04-06T17:33:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UnauthorisedViewWalletHistory -->
+        <test-method status="PASS" signature="ViewWalletHistory()[pri:0, instance:frizza.Wallet@34c4973]" name="ViewWalletHistory" duration-ms="256" started-at="2021-04-06T17:33:42 IST" finished-at="2021-04-06T17:33:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewWalletHistory -->
+      </class> <!-- frizza.Wallet -->
+      <class name="frizza.HomePage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="setup" is-config="true" duration-ms="26" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="CpatOfferstoreDetails()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="CpatOfferstoreDetails" duration-ms="5739" started-at="2021-04-06T17:33:32 IST" finished-at="2021-04-06T17:33:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CpatOfferstoreDetails -->
+        <test-method status="PASS" signature="CpatStoreOffers()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="CpatStoreOffers" duration-ms="433" started-at="2021-04-06T17:33:38 IST" finished-at="2021-04-06T17:33:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CpatStoreOffers -->
+        <test-method status="PASS" signature="InstalledApp()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="InstalledApp" duration-ms="380" started-at="2021-04-06T17:33:38 IST" finished-at="2021-04-06T17:33:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InstalledApp -->
+        <test-method status="PASS" signature="InstalledAppWithoutproperheader()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="InstalledAppWithoutproperheader" duration-ms="377" started-at="2021-04-06T17:33:39 IST" finished-at="2021-04-06T17:33:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InstalledAppWithoutproperheader -->
+        <test-method status="PASS" signature="NonCpatOffersDetails()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="NonCpatOffersDetails" duration-ms="259" started-at="2021-04-06T17:33:39 IST" finished-at="2021-04-06T17:33:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonCpatOffersDetails -->
+        <test-method status="PASS" signature="NonCpatStoreOffers()[pri:0, instance:frizza.HomePage@2bbf4b8b]" name="NonCpatStoreOffers" duration-ms="255" started-at="2021-04-06T17:33:39 IST" finished-at="2021-04-06T17:33:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonCpatStoreOffers -->
+      </class> <!-- frizza.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

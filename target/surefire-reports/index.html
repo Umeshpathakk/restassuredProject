@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\umesh\eclipse-workspace\FrizzaMaven\testng1.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">38 methods, 2 failed,   36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="CpatOfferstoreDetails">CpatOfferstoreDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="NonCpatOffersDetails">NonCpatOffersDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="AboveLimitFirstLastName">AboveLimitFirstLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="AlphanumbericFirstLastName">AlphanumbericFirstLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="BlankDOB">BlankDOB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="BlankFirstLastName">BlankFirstLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="Constants">Constants</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="CpatStoreOffers">CpatStoreOffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="DifferentEmailproperformatLogin">DifferentEmailproperformatLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="FutureDob">FutureDob</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="ImproperDOBFormat">ImproperDOBFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="ImproperEmailFormat">ImproperEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="ImproperGenderFormat">ImproperGenderFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="InstalledApp">InstalledApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="InstalledAppWithoutproperheader">InstalledAppWithoutproperheader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="MinorDob">MinorDob</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="MoreinfoPageOpen">MoreinfoPageOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NewUserButAlreadyUsedDeviceID">NewUserButAlreadyUsedDeviceID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NewUserProperSignUPWithImproperReferCode">NewUserProperSignUPWithImproperReferCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NewUserProperSignUPWithProperReferCode">NewUserProperSignUPWithProperReferCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NewUserProperSignUPWithoutReferCode">NewUserProperSignUPWithoutReferCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="NonCpatStoreOffers">NonCpatStoreOffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NullEmailformatLogin">NullEmailformatLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NumberLessThanNineDigitLogin">NumberLessThanNineDigitLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NumberMoreThanTenDigitLogin">NumberMoreThanTenDigitLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="NumberNotStartFrom6789Login">NumberNotStartFrom6789Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Wallet" hash-for-method="PaytmtranferRequestwithooutCriteria">PaytmtranferRequestwithooutCriteria</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="ProperLogin">ProperLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="ProperdataDobGenderEmailProfileupdate">ProperdataDobGenderEmailProfileupdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="ReferPageOpen">ReferPageOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="RootedLogin">RootedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.HomePage" hash-for-method="SendFeedback">SendFeedback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Wallet" hash-for-method="UnauthorisedViewWalletHistory">UnauthorisedViewWalletHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="ViewProfile">ViewProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Wallet" hash-for-method="ViewWalletHistory">ViewWalletHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Login" hash-for-method="WrongEmailformatLogin">WrongEmailformatLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="blankEMail">blankEMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frizza.Profile" hash-for-method="blankGender">blankGender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">frizza.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CpatOfferstoreDetails">
+                  </a> <!-- CpatOfferstoreDetails -->
+                  <span class="method-name">CpatOfferstoreDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at frizza.HomePage.CpatOfferstoreDetails(HomePage.java:301)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NonCpatOffersDetails">
+                  </a> <!-- NonCpatOffersDetails -->
+                  <span class="method-name">NonCpatOffersDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at frizza.HomePage.NonCpatOffersDetails(HomePage.java:254)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">frizza.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DifferentEmailproperformatLogin">
+                  </a> <!-- DifferentEmailproperformatLogin -->
+                  <span class="method-name">DifferentEmailproperformatLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewUserButAlreadyUsedDeviceID">
+                  </a> <!-- NewUserButAlreadyUsedDeviceID -->
+                  <span class="method-name">NewUserButAlreadyUsedDeviceID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewUserProperSignUPWithImproperReferCode">
+                  </a> <!-- NewUserProperSignUPWithImproperReferCode -->
+                  <span class="method-name">NewUserProperSignUPWithImproperReferCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewUserProperSignUPWithProperReferCode">
+                  </a> <!-- NewUserProperSignUPWithProperReferCode -->
+                  <span class="method-name">NewUserProperSignUPWithProperReferCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewUserProperSignUPWithoutReferCode">
+                  </a> <!-- NewUserProperSignUPWithoutReferCode -->
+                  <span class="method-name">NewUserProperSignUPWithoutReferCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NullEmailformatLogin">
+                  </a> <!-- NullEmailformatLogin -->
+                  <span class="method-name">NullEmailformatLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NumberLessThanNineDigitLogin">
+                  </a> <!-- NumberLessThanNineDigitLogin -->
+                  <span class="method-name">NumberLessThanNineDigitLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NumberMoreThanTenDigitLogin">
+                  </a> <!-- NumberMoreThanTenDigitLogin -->
+                  <span class="method-name">NumberMoreThanTenDigitLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NumberNotStartFrom6789Login">
+                  </a> <!-- NumberNotStartFrom6789Login -->
+                  <span class="method-name">NumberNotStartFrom6789Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProperLogin">
+                  </a> <!-- ProperLogin -->
+                  <span class="method-name">ProperLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RootedLogin">
+                  </a> <!-- RootedLogin -->
+                  <span class="method-name">RootedLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WrongEmailformatLogin">
+                  </a> <!-- WrongEmailformatLogin -->
+                  <span class="method-name">WrongEmailformatLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">frizza.Profile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AboveLimitFirstLastName">
+                  </a> <!-- AboveLimitFirstLastName -->
+                  <span class="method-name">AboveLimitFirstLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AlphanumbericFirstLastName">
+                  </a> <!-- AlphanumbericFirstLastName -->
+                  <span class="method-name">AlphanumbericFirstLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BlankDOB">
+                  </a> <!-- BlankDOB -->
+                  <span class="method-name">BlankDOB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BlankFirstLastName">
+                  </a> <!-- BlankFirstLastName -->
+                  <span class="method-name">BlankFirstLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FutureDob">
+                  </a> <!-- FutureDob -->
+                  <span class="method-name">FutureDob</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImproperDOBFormat">
+                  </a> <!-- ImproperDOBFormat -->
+                  <span class="method-name">ImproperDOBFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImproperEmailFormat">
+                  </a> <!-- ImproperEmailFormat -->
+                  <span class="method-name">ImproperEmailFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImproperGenderFormat">
+                  </a> <!-- ImproperGenderFormat -->
+                  <span class="method-name">ImproperGenderFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MinorDob">
+                  </a> <!-- MinorDob -->
+                  <span class="method-name">MinorDob</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProperdataDobGenderEmailProfileupdate">
+                  </a> <!-- ProperdataDobGenderEmailProfileupdate -->
+                  <span class="method-name">ProperdataDobGenderEmailProfileupdate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ViewProfile">
+                  </a> <!-- ViewProfile -->
+                  <span class="method-name">ViewProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankEMail">
+                  </a> <!-- blankEMail -->
+                  <span class="method-name">blankEMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankGender">
+                  </a> <!-- blankGender -->
+                  <span class="method-name">blankGender</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">frizza.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Constants">
+                  </a> <!-- Constants -->
+                  <span class="method-name">Constants</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CpatStoreOffers">
+                  </a> <!-- CpatStoreOffers -->
+                  <span class="method-name">CpatStoreOffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InstalledApp">
+                  </a> <!-- InstalledApp -->
+                  <span class="method-name">InstalledApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InstalledAppWithoutproperheader">
+                  </a> <!-- InstalledAppWithoutproperheader -->
+                  <span class="method-name">InstalledAppWithoutproperheader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MoreinfoPageOpen">
+                  </a> <!-- MoreinfoPageOpen -->
+                  <span class="method-name">MoreinfoPageOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NonCpatStoreOffers">
+                  </a> <!-- NonCpatStoreOffers -->
+                  <span class="method-name">NonCpatStoreOffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReferPageOpen">
+                  </a> <!-- ReferPageOpen -->
+                  <span class="method-name">ReferPageOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SendFeedback">
+                  </a> <!-- SendFeedback -->
+                  <span class="method-name">SendFeedback</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">frizza.Wallet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaytmtranferRequestwithooutCriteria">
+                  </a> <!-- PaytmtranferRequestwithooutCriteria -->
+                  <span class="method-name">PaytmtranferRequestwithooutCriteria</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UnauthorisedViewWalletHistory">
+                  </a> <!-- UnauthorisedViewWalletHistory -->
+                  <span class="method-name">UnauthorisedViewWalletHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ViewWalletHistory">
+                  </a> <!-- ViewWalletHistory -->
+                  <span class="method-name">ViewWalletHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\umesh\eclipse-workspace\FrizzaMaven\testng1.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;frizza.HomePage&quot;/&gt;
+      &lt;class name=&quot;frizza.Profile&quot;/&gt;
+      &lt;class name=&quot;frizza.Login&quot;/&gt;
+      &lt;class name=&quot;frizza.Wallet&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(38);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Constants')
+data.setCell(0, 2, 'frizza.HomePage')
+data.setCell(0, 3, 6749);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CpatOfferstoreDetails')
+data.setCell(1, 2, 'frizza.HomePage')
+data.setCell(1, 3, 2082);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CpatStoreOffers')
+data.setCell(2, 2, 'frizza.HomePage')
+data.setCell(2, 3, 1669);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FutureDob')
+data.setCell(3, 2, 'frizza.Profile')
+data.setCell(3, 3, 827);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RootedLogin')
+data.setCell(4, 2, 'frizza.Login')
+data.setCell(4, 3, 527);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'NewUserProperSignUPWithoutReferCode')
+data.setCell(5, 2, 'frizza.Login')
+data.setCell(5, 3, 498);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'NewUserProperSignUPWithProperReferCode')
+data.setCell(6, 2, 'frizza.Login')
+data.setCell(6, 3, 485);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BlankDOB')
+data.setCell(7, 2, 'frizza.Profile')
+data.setCell(7, 3, 417);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AlphanumbericFirstLastName')
+data.setCell(8, 2, 'frizza.Profile')
+data.setCell(8, 3, 406);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ImproperGenderFormat')
+data.setCell(9, 2, 'frizza.Profile')
+data.setCell(9, 3, 378);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'InstalledApp')
+data.setCell(10, 2, 'frizza.HomePage')
+data.setCell(10, 3, 325);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ImproperDOBFormat')
+data.setCell(11, 2, 'frizza.Profile')
+data.setCell(11, 3, 322);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'NewUserProperSignUPWithImproperReferCode')
+data.setCell(12, 2, 'frizza.Login')
+data.setCell(12, 3, 322);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'WrongEmailformatLogin')
+data.setCell(13, 2, 'frizza.Login')
+data.setCell(13, 3, 285);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'blankGender')
+data.setCell(14, 2, 'frizza.Profile')
+data.setCell(14, 3, 252);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'InstalledAppWithoutproperheader')
+data.setCell(15, 2, 'frizza.HomePage')
+data.setCell(15, 3, 252);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ImproperEmailFormat')
+data.setCell(16, 2, 'frizza.Profile')
+data.setCell(16, 3, 251);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ProperdataDobGenderEmailProfileupdate')
+data.setCell(17, 2, 'frizza.Profile')
+data.setCell(17, 3, 250);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'NonCpatStoreOffers')
+data.setCell(18, 2, 'frizza.HomePage')
+data.setCell(18, 3, 248);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'DifferentEmailproperformatLogin')
+data.setCell(19, 2, 'frizza.Login')
+data.setCell(19, 3, 239);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'AboveLimitFirstLastName')
+data.setCell(20, 2, 'frizza.Profile')
+data.setCell(20, 3, 238);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'NewUserButAlreadyUsedDeviceID')
+data.setCell(21, 2, 'frizza.Login')
+data.setCell(21, 3, 238);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'SendFeedback')
+data.setCell(22, 2, 'frizza.HomePage')
+data.setCell(22, 3, 236);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'ViewWalletHistory')
+data.setCell(23, 2, 'frizza.Wallet')
+data.setCell(23, 3, 236);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'UnauthorisedViewWalletHistory')
+data.setCell(24, 2, 'frizza.Wallet')
+data.setCell(24, 3, 231);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'NumberLessThanNineDigitLogin')
+data.setCell(25, 2, 'frizza.Login')
+data.setCell(25, 3, 222);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'MoreinfoPageOpen')
+data.setCell(26, 2, 'frizza.HomePage')
+data.setCell(26, 3, 221);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'MinorDob')
+data.setCell(27, 2, 'frizza.Profile')
+data.setCell(27, 3, 221);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'ProperLogin')
+data.setCell(28, 2, 'frizza.Login')
+data.setCell(28, 3, 220);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'BlankFirstLastName')
+data.setCell(29, 2, 'frizza.Profile')
+data.setCell(29, 3, 218);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'ReferPageOpen')
+data.setCell(30, 2, 'frizza.HomePage')
+data.setCell(30, 3, 218);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'blankEMail')
+data.setCell(31, 2, 'frizza.Profile')
+data.setCell(31, 3, 218);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'NullEmailformatLogin')
+data.setCell(32, 2, 'frizza.Login')
+data.setCell(32, 3, 216);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'NumberNotStartFrom6789Login')
+data.setCell(33, 2, 'frizza.Login')
+data.setCell(33, 3, 216);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'NumberMoreThanTenDigitLogin')
+data.setCell(34, 2, 'frizza.Login')
+data.setCell(34, 3, 212);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'NonCpatOffersDetails')
+data.setCell(35, 2, 'frizza.HomePage')
+data.setCell(35, 3, 212);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'ViewProfile')
+data.setCell(36, 2, 'frizza.Profile')
+data.setCell(36, 3, 210);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'PaytmtranferRequestwithooutCriteria')
+data.setCell(37, 2, 'frizza.Wallet')
+data.setCell(37, 3, 209);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.HomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Profile</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Wallet</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.HomePage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Constants</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CpatOfferstoreDetails</span>
+                <span class="method-start">6899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CpatStoreOffers</span>
+                <span class="method-start">9007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InstalledApp</span>
+                <span class="method-start">10681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InstalledAppWithoutproperheader</span>
+                <span class="method-start">11007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MoreinfoPageOpen</span>
+                <span class="method-start">11260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NonCpatOffersDetails</span>
+                <span class="method-start">11482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NonCpatStoreOffers</span>
+                <span class="method-start">11694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReferPageOpen</span>
+                <span class="method-start">11946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SendFeedback</span>
+                <span class="method-start">12165 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Profile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AboveLimitFirstLastName</span>
+                <span class="method-start">12406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AlphanumbericFirstLastName</span>
+                <span class="method-start">12644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BlankDOB</span>
+                <span class="method-start">13051 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BlankFirstLastName</span>
+                <span class="method-start">13468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FutureDob</span>
+                <span class="method-start">13688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ImproperDOBFormat</span>
+                <span class="method-start">14517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ImproperEmailFormat</span>
+                <span class="method-start">14843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ImproperGenderFormat</span>
+                <span class="method-start">15097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MinorDob</span>
+                <span class="method-start">15475 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProperdataDobGenderEmailProfileupdate</span>
+                <span class="method-start">15696 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ViewProfile</span>
+                <span class="method-start">15947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">blankEMail</span>
+                <span class="method-start">16158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">blankGender</span>
+                <span class="method-start">16377 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DifferentEmailproperformatLogin</span>
+                <span class="method-start">16631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewUserButAlreadyUsedDeviceID</span>
+                <span class="method-start">16871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewUserProperSignUPWithImproperReferCode</span>
+                <span class="method-start">17111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewUserProperSignUPWithProperReferCode</span>
+                <span class="method-start">17434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewUserProperSignUPWithoutReferCode</span>
+                <span class="method-start">17920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NullEmailformatLogin</span>
+                <span class="method-start">18418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NumberLessThanNineDigitLogin</span>
+                <span class="method-start">18634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NumberMoreThanTenDigitLogin</span>
+                <span class="method-start">18856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NumberNotStartFrom6789Login</span>
+                <span class="method-start">19069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProperLogin</span>
+                <span class="method-start">19287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RootedLogin</span>
+                <span class="method-start">19508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WrongEmailformatLogin</span>
+                <span class="method-start">20035 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frizza.Wallet</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">PaytmtranferRequestwithooutCriteria</span>
+                <span class="method-start">20323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UnauthorisedViewWalletHistory</span>
+                <span class="method-start">20532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ViewWalletHistory</span>
+                <span class="method-start">20764 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

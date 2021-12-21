@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 26.048 s <<< FAILURE! - in TestSuite
+CpatOfferstoreDetails(frizza.HomePage)  Time elapsed: 2.105 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at frizza.HomePage.CpatOfferstoreDetails(HomePage.java:301)
+
+NonCpatOffersDetails(frizza.HomePage)  Time elapsed: 0.193 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at frizza.HomePage.NonCpatOffersDetails(HomePage.java:254)
+
